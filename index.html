@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A clean, responsive sample landing page" />
+    <title>Sample Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚀</text></svg>" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">Rocket<span>Start</span></a>
+        <nav class="nav" aria-label="primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="nav-menu" class="nav-list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a class="btn btn-sm" href="#cta">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Launch beautiful sites faster</h1>
+            <p>
+              A modern, responsive landing page template with accessible components and clean, reusable styles.
+            </p>
+            <div class="hero-cta">
+              <a href="#cta" class="btn btn-primary">Start free</a>
+              <a href="#features" class="btn btn-ghost">Learn more</a>
+            </div>
+            <ul class="hero-trust">
+              <li>No signup required</li>
+              <li>Open source</li>
+              <li>MIT licensed</li>
+            </ul>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <div class="card demo">
+              <div class="card-header">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+              </div>
+              <div class="card-body">
+                <pre><code>npm create landing@latest
+cd my-landing
+npm run dev</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,64L80,69.3C160,75,320,85,480,74.7C640,64,800,32,960,42.7C1120,53,1280,107,1360,133.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+        </svg>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <h2 class="section-title">Everything you need</h2>
+          <p class="section-subtitle">Opinionated defaults so you can ship quickly.</p>
+          <div class="grid features">
+            <article class="feature">
+              <div class="icon">⚡</div>
+              <h3>Fast</h3>
+              <p>Lightweight styles and zero-build setup for instant iteration.</p>
+            </article>
+            <article class="feature">
+              <div class="icon">🎨</div>
+              <h3>Beautiful</h3>
+              <p>Modern typography, balanced spacing, and subtle motion.</p>
+            </article>
+            <article class="feature">
+              <div class="icon">🔒</div>
+              <h3>Accessible</h3>
+              <p>Semantic HTML and keyboard-friendly navigation out of the box.</p>
+            </article>
+            <article class="feature">
+              <div class="icon">🧩</div>
+              <h3>Composable</h3>
+              <p>Utility classes and components that play well together.</p>
+            </article>
+            <article class="feature">
+              <div class="icon">📈</div>
+              <h3>SEO-ready</h3>
+              <p>Clean markup and meta tags that help you rank.</p>
+            </article>
+            <article class="feature">
+              <div class="icon">🛠️</div>
+              <h3>Easy to edit</h3>
+              <p>Plain HTML/CSS/JS—no framework lock-in, just edit and go.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted" id="testimonials">
+        <div class="container">
+          <h2 class="section-title">Loved by makers</h2>
+          <div class="grid testimonials">
+            <blockquote class="quote">
+              <p>“I shipped a new landing in an afternoon. Perfect defaults.”</p>
+              <footer>— Alex, Indie Dev</footer>
+            </blockquote>
+            <blockquote class="quote">
+              <p>“Clean, accessible, and fast. Exactly what I needed.”</p>
+              <footer>— Priya, Product Designer</footer>
+            </blockquote>
+            <blockquote class="quote">
+              <p>“No build steps, no fuss. Just results.”</p>
+              <footer>— Chen, Startup Founder</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="container">
+          <h2 class="section-title">Simple pricing</h2>
+          <div class="grid pricing">
+            <div class="price-card">
+              <h3>Free</h3>
+              <p class="price">$0</p>
+              <ul>
+                <li>All components</li>
+                <li>MIT license</li>
+                <li>Community support</li>
+              </ul>
+              <a href="#cta" class="btn btn-primary btn-full">Get started</a>
+            </div>
+            <div class="price-card featured">
+              <h3>Pro</h3>
+              <p class="price">$19</p>
+              <ul>
+                <li>All Free features</li>
+                <li>Email support</li>
+                <li>Starter templates</li>
+              </ul>
+              <a href="#cta" class="btn btn-dark btn-full">Buy now</a>
+            </div>
+            <div class="price-card">
+              <h3>Team</h3>
+              <p class="price">$49</p>
+              <ul>
+                <li>Pro features</li>
+                <li>Team license</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="#cta" class="btn btn-primary btn-full">Contact sales</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta" id="cta">
+        <div class="container cta-inner">
+          <h2>Ready to launch?</h2>
+          <p>Copy this template and publish your site today.</p>
+          <form class="signup" action="#" method="post" onsubmit="return false;">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required />
+            <button class="btn btn-dark" type="submit">Get early access</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo" href="#">Rocket<span>Start</span></a>
+        <nav aria-label="footer">
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">© <span id="year"></span> RocketStart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
