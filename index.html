@@ -1,199 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A clean, responsive sample landing page" />
-    <title>Sample Landing Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚀</text></svg>" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="#">Rocket<span>Start</span></a>
-        <nav class="nav" aria-label="primary">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-          <ul id="nav-menu" class="nav-list">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a class="btn btn-sm" href="#cta">Get Started</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" id="home">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <h1>Launch beautiful sites faster</h1>
-            <p>
-              A modern, responsive landing page template with accessible components and clean, reusable styles.
-            </p>
-            <div class="hero-cta">
-              <a href="#cta" class="btn btn-primary">Start free</a>
-              <a href="#features" class="btn btn-ghost">Learn more</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span id="nav-name">Your Name</span>
             </div>
-            <ul class="hero-trust">
-              <li>No signup required</li>
-              <li>Open source</li>
-              <li>MIT licensed</li>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-          </div>
-          <div class="hero-media" aria-hidden="true">
-            <div class="card demo">
-              <div class="card-header">
-                <div class="dot red"></div>
-                <div class="dot yellow"></div>
-                <div class="dot green"></div>
-              </div>
-              <div class="card-body">
-                <pre><code>npm create landing@latest
-cd my-landing
-npm run dev</code></pre>
-              </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-          </div>
         </div>
-        <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M0,64L80,69.3C160,75,320,85,480,74.7C640,64,800,32,960,42.7C1120,53,1280,107,1360,133.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-        </svg>
-      </section>
+    </nav>
 
-      <section class="section" id="features">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span id="hero-name">Your Name</span>
+                </h1>
+                <h2 class="hero-subtitle" id="hero-title">Your Professional Title</h2>
+                <p class="hero-description" id="hero-description">
+                    A passionate developer creating amazing digital experiences
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/300x300/4f46e5/ffffff?text=Your+Photo" alt="Profile Picture" id="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-          <h2 class="section-title">Everything you need</h2>
-          <p class="section-subtitle">Opinionated defaults so you can ship quickly.</p>
-          <div class="grid features">
-            <article class="feature">
-              <div class="icon">⚡</div>
-              <h3>Fast</h3>
-              <p>Lightweight styles and zero-build setup for instant iteration.</p>
-            </article>
-            <article class="feature">
-              <div class="icon">🎨</div>
-              <h3>Beautiful</h3>
-              <p>Modern typography, balanced spacing, and subtle motion.</p>
-            </article>
-            <article class="feature">
-              <div class="icon">🔒</div>
-              <h3>Accessible</h3>
-              <p>Semantic HTML and keyboard-friendly navigation out of the box.</p>
-            </article>
-            <article class="feature">
-              <div class="icon">🧩</div>
-              <h3>Composable</h3>
-              <p>Utility classes and components that play well together.</p>
-            </article>
-            <article class="feature">
-              <div class="icon">📈</div>
-              <h3>SEO-ready</h3>
-              <p>Clean markup and meta tags that help you rank.</p>
-            </article>
-            <article class="feature">
-              <div class="icon">🛠️</div>
-              <h3>Easy to edit</h3>
-              <p>Plain HTML/CSS/JS—no framework lock-in, just edit and go.</p>
-            </article>
-          </div>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p id="about-description">
+                        I'm a passionate developer with a love for creating innovative solutions. 
+                        With expertise in modern web technologies, I enjoy turning complex problems 
+                        into simple, beautiful designs.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3 id="experience-years">3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3 id="projects-count">20+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3 id="clients-count">15+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section muted" id="testimonials">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <div class="container">
-          <h2 class="section-title">Loved by makers</h2>
-          <div class="grid testimonials">
-            <blockquote class="quote">
-              <p>“I shipped a new landing in an afternoon. Perfect defaults.”</p>
-              <footer>— Alex, Indie Dev</footer>
-            </blockquote>
-            <blockquote class="quote">
-              <p>“Clean, accessible, and fast. Exactly what I needed.”</p>
-              <footer>— Priya, Product Designer</footer>
-            </blockquote>
-            <blockquote class="quote">
-              <p>“No build steps, no fuss. Just results.”</p>
-              <footer>— Chen, Startup Founder</footer>
-            </blockquote>
-          </div>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid" id="skills-container">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section" id="pricing">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <div class="container">
-          <h2 class="section-title">Simple pricing</h2>
-          <div class="grid pricing">
-            <div class="price-card">
-              <h3>Free</h3>
-              <p class="price">$0</p>
-              <ul>
-                <li>All components</li>
-                <li>MIT license</li>
-                <li>Community support</li>
-              </ul>
-              <a href="#cta" class="btn btn-primary btn-full">Get started</a>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be populated by JavaScript -->
             </div>
-            <div class="price-card featured">
-              <h3>Pro</h3>
-              <p class="price">$19</p>
-              <ul>
-                <li>All Free features</li>
-                <li>Email support</li>
-                <li>Starter templates</li>
-              </ul>
-              <a href="#cta" class="btn btn-dark btn-full">Buy now</a>
-            </div>
-            <div class="price-card">
-              <h3>Team</h3>
-              <p class="price">$49</p>
-              <ul>
-                <li>Pro features</li>
-                <li>Team license</li>
-                <li>Priority support</li>
-              </ul>
-              <a href="#cta" class="btn btn-primary btn-full">Contact sales</a>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section cta" id="cta">
-        <div class="container cta-inner">
-          <h2>Ready to launch?</h2>
-          <p>Copy this template and publish your site today.</p>
-          <form class="signup" action="#" method="post" onsubmit="return false;">
-            <label class="sr-only" for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Enter your email" required />
-            <button class="btn btn-dark" type="submit">Get early access</button>
-          </form>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span id="contact-email">your.email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span id="contact-phone">+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="contact-location">Your City, Country</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" id="github-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" id="linkedin-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" id="twitter-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" id="instagram-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <a class="logo" href="#">Rocket<span>Start</span></a>
-        <nav aria-label="footer">
-          <ul class="footer-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Privacy</a></li>
-          </ul>
-        </nav>
-        <p class="copyright">© <span id="year"></span> RocketStart. All rights reserved.</p>
-      </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year">2024</span> <span id="footer-name">Your Name</span>. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
